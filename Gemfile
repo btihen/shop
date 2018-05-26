@@ -89,6 +89,11 @@ gem 'money-rails', '~> 1.11'
 #          tasks_attributes: [:id, :description, :done, :_destroy])
 # end
 
+# validates dates
+gem 'validates_timeliness', '~> 4.0'
+# rails generate validates_timeliness:install
+
+
 group :test do
   gem 'cucumber-rails', require: false
   # rails generate cucumber:install
@@ -97,13 +102,19 @@ group :test do
   gem 'rspec-expectations'
   # database_cleaner is not required, but highly recommended
   # gem 'database_cleaner'
+
+  # allow cucumber to do JavaScript testing too
+  gem 'selenium-webdriver'
+
+  # easier tests (inside rspec)
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
-  gem 'factory_bot_rails', '~> 4.8'
+  gem 'factory_bot_rails', '~> 4.10'
   gem 'rspec-rails', '~> 3.7'
   # rails generate rspec:install
   gem 'faker', '~> 1.8'
