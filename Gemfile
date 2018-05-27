@@ -68,10 +68,33 @@ gem 'money-rails', '~> 1.11'
 # https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-chf.en.html
 # https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html
 
-# gem 'devise', '~> 4.4'
+gem 'devise', '~> 4.4'
 # rails generate devise:install
-# rails generate devise MODEL
+# multi-logins
+# https://github.com/plataformatec/devise/wiki/How-to-Setup-Multiple-Devise-User-Models
+# rails generate devise staff
 # rails db:migrate
+# rails generate devise clients
+# rails db:migrate
+# Name Routes
+# devise_for :staff, path: 'staff'
+# # eg. http://localhost:3000/staff/sign_in
+# devise_for :clients, path: 'clients'
+# eg. http://localhost:3000/clients/sign_in
+# Scoped Views
+# # config/initializers/devise.rb
+# config.scoped_views = true
+# # run
+# rails g devise:views staff
+# rails g devise:views clients
+# scoped controllers
+# rails generate devise:controllers staff
+# rails generate devise:controllers clients
+# # update routes
+# devise_for :staff, path: 'staff', controllers: { sessions: "staff/sessions" etc....}
+# devise_for :clients,   path: 'clients', controllers: { sessions: "clients/sessions" etc....}
+# rails db:migrate
+# gem 'cancan'
 
 # detect old browsers
 # gem "browser", '~> 2.5'
@@ -90,6 +113,8 @@ gem 'money-rails', '~> 1.11'
 # end
 
 # validates dates
+# gem 'date_validator', '~> 0.9'
+# validates date and time
 gem 'validates_timeliness', '~> 4.0'
 # rails generate validates_timeliness:install
 
