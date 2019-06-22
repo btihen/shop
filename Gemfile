@@ -38,8 +38,8 @@ gem 'mini_magick', '~> 4.8'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # bootstrap needs
-gem 'jquery-rails'
-gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails', '>= 4.3.4'
+gem 'bootstrap', '~> 4.1.2'
 # https://github.com/twbs/bootstrap-rubygem
 # file: app/assets/stylesheets/application.scss:
 # // Custom bootstrap variables must be set or imported *before* bootstrap.
