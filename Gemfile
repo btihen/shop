@@ -68,7 +68,7 @@ gem 'money-rails', '~> 1.11'
 # https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-chf.en.html
 # https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html
 
-gem 'devise', '~> 4.4'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 # rails generate devise:install
 # multi-logins
 # https://github.com/plataformatec/devise/wiki/How-to-Setup-Multiple-Devise-User-Models
