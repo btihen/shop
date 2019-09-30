@@ -129,7 +129,7 @@ group :test do
   # gem 'database_cleaner'
 
   # allow cucumber to do JavaScript testing too
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 3.12.0'
 
   # easier tests (inside rspec)
   gem 'shoulda-matchers', '~> 3.1'
