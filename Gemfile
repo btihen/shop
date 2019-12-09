@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
-gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.9'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -38,8 +38,8 @@ gem 'mini_magick', '~> 4.8'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # bootstrap needs
-gem 'jquery-rails', '>= 4.3.3'
-gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
+gem 'bootstrap'
 # https://github.com/twbs/bootstrap-rubygem
 # file: app/assets/stylesheets/application.scss:
 # // Custom bootstrap variables must be set or imported *before* bootstrap.
