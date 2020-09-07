@@ -120,7 +120,7 @@ gem 'validates_timeliness', '~> 4.0'
 
 
 group :test do
-  gem 'cucumber-rails', '>= 1.6.0', require: false
+  gem 'cucumber-rails', '>= 2.1.0', require: false
   # rails generate cucumber:install
   # https://github.com/cucumber/cucumber/wiki/RSpec-Expectations
   # use rspec - expectations in cucumber
