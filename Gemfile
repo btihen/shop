@@ -5,13 +5,13 @@ ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 5.1.6'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 4.3'
+gem 'puma', '~> 4.3', '>= 4.3.12'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -38,7 +38,7 @@ gem 'mini_magick', '~> 4.9'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # bootstrap needs
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'bootstrap'
 # https://github.com/twbs/bootstrap-rubygem
 # file: app/assets/stylesheets/application.scss:
@@ -50,7 +50,7 @@ gem 'bootstrap'
 # //= require bootstrap-sprockets
 
 # gem 'money', '~> 6.11'
-gem 'money-rails', '~> 1.11', '>= 1.11.0'
+gem 'money-rails', '~> 1.13', '>= 1.13.3'
 # rails g money_rails:initializer
 #
 # gem 'eu_central_bank'
@@ -120,7 +120,7 @@ gem 'validates_timeliness', '~> 4.0'
 
 
 group :test do
-  gem 'cucumber-rails', '>= 1.6.0', require: false
+  gem 'cucumber-rails', '>= 2.1.0', require: false
   # rails generate cucumber:install
   # https://github.com/cucumber/cucumber/wiki/RSpec-Expectations
   # use rspec - expectations in cucumber
@@ -132,26 +132,26 @@ group :test do
   gem 'selenium-webdriver'
 
   # easier tests (inside rspec)
-  gem 'shoulda-matchers', '~> 3.1'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
 end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
-  gem 'factory_bot_rails', '~> 4.10', '>= 4.10.0'
-  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'factory_bot_rails', '~> 4.11', '>= 4.11.1'
+  gem 'rspec-rails', '~> 3.9', '>= 3.9.0'
   # rails generate rspec:install
   gem 'faker', '~> 1.8'
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.6.2'
+  gem 'web-console', '>= 3.7.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.0.1'
 
   gem 'pry-rails'
 end
