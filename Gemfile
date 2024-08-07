@@ -39,7 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # bootstrap needs
 gem 'jquery-rails'
-gem 'bootstrap'
+gem 'bootstrap', '>= 5.0.0'
 # https://github.com/twbs/bootstrap-rubygem
 # file: app/assets/stylesheets/application.scss:
 # // Custom bootstrap variables must be set or imported *before* bootstrap.
